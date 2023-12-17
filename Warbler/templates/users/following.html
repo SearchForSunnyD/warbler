@@ -1,0 +1,9 @@
+{% extends 'users/detail.html' %} {% import "card_gen.html" as macros %} {%
+block user_details %}
+<div class="col-sm-9">
+	<div class="row">
+		{% for followed_user in user.following %} {{
+		macros.render_follow_card(followed_user) }} {% endfor %}
+	</div>
+</div>
+{% endblock %}

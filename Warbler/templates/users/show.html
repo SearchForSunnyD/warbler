@@ -1,0 +1,8 @@
+{% extends 'users/detail.html' %}{% import "card_gen.html" as macros %} {% block user_details %}
+<div class="col-sm-6">
+	<ul class="list-group" id="messages">
+		{% for message in messages %} {{
+		macros.render_message_card(message) }} {% endfor %}
+	</ul>
+</div>
+{% endblock %}
