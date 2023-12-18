@@ -7,7 +7,7 @@ content %}
 
 	<div class="col-lg-6 col-md-8 col-sm-12">
 		<ul class="list-group" id="messages">
-			{% for msg in messages %} {{ macros.render_message_interactable_card(msg) }} {% endfor
+			{% for msg in messages %} {{ macros.render_message_interactable_card(msg, likes) }} {% endfor
 			%}
 		</ul>
 	</div>

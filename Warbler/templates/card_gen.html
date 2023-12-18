@@ -40,7 +40,7 @@
 		</ul>
 	</div>
 </div>
-{% endmacro %} {% macro render_message_interactable_card(msg) %}
+{% endmacro %} {% macro render_message_interactable_card(msg, likes) %}
 <div class="list-group-item">
 	<a href="/messages/{{ msg.id  }}" class="message-link" />
 	<a href="/users/{{ msg.user.id }}">
